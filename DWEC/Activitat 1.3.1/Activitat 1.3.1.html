@@ -3,10 +3,24 @@
 	
 	</head>
 	<body>
-		<p id="prova1"></P>
-	
+			
+		<p>D'on ets?</p>
+			
+		<button onclick="ciutatBCN()">CiutatBCN</button>		<!-- Botó que crida la primera funció-->
+		<button onclick="ciutatPAR()">CiutatPAR</button>
+		
+		<p id="ciutat"></P>
+		
 		<script>
-			function funcio1()
+			function ciutatBCN(){	<!-- Funció que crida el primer botó -->
+				var joSocDe = "Barcelona";
+				document.getElementById("ciutat").innerHTML = "Jo sóc de " + joSocDe;		<!-- Text que es mostra, es guarda a la P de sobre -->
+			}
+			
+			function ciutatPAR(){
+				var joSocDe = "París";
+				document.getElementById("ciutat").innerHTML = "Jo sóc de " + joSocDe;
+			}
 		</script>
 	</body>
 </html>
