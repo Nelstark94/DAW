@@ -10,23 +10,19 @@
 		<button onclick="ciutatPAR()">CiutatPAR</button>
 		
 		<p id="ciutat"></P>
-		<p id="continent"></p>
 		
 		<script>
 			var elMeuContinentEs = "Europa";	<!-- Variable externa -->
 			
 			function ciutatBCN(){	<!-- Funció que crida el primer botó -->
 				var joSocDe = "Barcelona";
-				document.getElementById("ciutat").innerHTML = "Jo sóc d'un país d' " + elMeuContinentEs;		
-					<!-- Text que es mostra, es guarda a la P de sobre -->
-				document.getElementById("continent").innerHTML = "El seu continent és " + elMeuContinentEs;		
-					<!-- Text que es mostra quan cliques el botó -->
+				document.getElementById("ciutat").innerHTML = "Jo sóc de " + joSocDe + " i el meu continent és " + elMeuContinentEs;		
+					<!-- Text que es mostra, es guarda a la P de sobre -->				
 			}
 			
 			function ciutatPAR(){
 				var joSocDe = "París";
-				document.getElementById("ciutat").innerHTML = "Jo sóc d'un país d' " + elMeuContinentEs;
-				document.getElementById("continent").innerHTML = "El seu continent és " + elMeuContinentEs;
+				document.getElementById("ciutat").innerHTML = "Jo sóc de " + joSocDe + " i el meu continent és " + elMeuContinentEs;
 			}
 		</script>
 	</body>
