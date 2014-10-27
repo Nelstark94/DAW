@@ -7,11 +7,10 @@
 		<h1>Activitat 1.3 - Inicis de javascript.</h1>
 		<table>
 			<tr>
-				<td>Exemples de Javascript</td>
-				<td> </td>
+				<td colspan="2" class="titoltaula">Exemples de Javascript</td>
 			</tr>
 			<tr>
-				<td>Variables</td>
+				<td><b>Variables<b/></td>
 				<td>
 					<script>
 						var x = 5;
@@ -20,7 +19,69 @@
 						
 						document.write("Variable X = " + x + "<br>");
 						document.write("Variable Y = " + y + "<br>");
-						document.write("Variable Y = " + z + "<br>");
+						document.write("Variable Z = " + z + "<br>");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Data Types</b></td>
+				<td>
+					<b>Tipus dinàmics. </b> <br/>
+					<script>
+						var x;
+						var y = 5;
+						var z = "Marc";
+						
+						document.write("var X; La variable X és de tipus indefinit.<br>");
+						document.write("var Y = 5; La variable Y és de tipus número.<br>");
+						document.write("var Z = 'Marc'; La variable Z és de tipus String.<br>");
+					</script>
+					
+					<br/>
+					<b>Números.</b><br/>
+					<script>
+						var x1 = 41.30;
+						var x2 = 41;
+						
+						document.write("var x1 = 41.30; La variable x1 té un tipus número amb decimals.<br>");
+						document.write("var x2 = 41; La variable x2 té un tipus número sense decimals.<br>");
+					</script>
+					
+					<br/>
+					<b>Arrays.</b> <br/>
+					<script>
+						var array = ["Casella1", "Casella2", "Casella3"];
+						
+						document.write("Per crear un array ho farem de la seguent manera:<br>");
+						document.write('var array = ["Casella1", "Casella2", "Casella3"];<br>');
+						document.write("Exemple de la primera paraula de l'array: " + array[0]);
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Objectes</b>
+				</td>
+				<td>
+					<b>Exemple:</b><br/>
+					<script>
+						var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+						
+						document.write('Per crear un objecte ho farem de la seguent forma.<br><br>');
+						document.write('var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};');
+					</script>
+				</tr>
+			</tr>
+			<tr>
+				<td>
+					<b>Funcions</b>
+				</td>
+				<td>
+					<b>Exemple:</b><br/>
+					<script>
+						function funcio1(a, b){
+							return a * b;
+						}
 					</script>
 				</td>
 			</tr>
